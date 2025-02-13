@@ -127,8 +127,8 @@ pub mod utils {
         group::{ff::Field, Curve},
         pallas,
     };
-    use rand::{RngCore, SeedableRng};
     use rand_chacha::ChaCha20Rng;
+    use rand_core::{SeedableRng, RngCore};
     use rayon::iter::{
         IndexedParallelIterator, IntoParallelRefIterator, ParallelIterator,
     };
