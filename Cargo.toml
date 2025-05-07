@@ -36,13 +36,13 @@ semolina = "~0.1.3"
 sppark = { git = "https://github.com/lurk-lab/sppark", branch = "new-gpu-spmvm" }
 halo2curves = { git = "https://github.com/ICME-Lab/halo2curves", branch = "main", features = ["bits", "derive_serde"]  }
 pasta_curves = { version = "0.5.0", features = ["repr-c"] }
-rand = "^0"
-rand_chacha = "^0.3"
+rand = "0.8.5"
+rand_chacha = "0.3"
 rayon = "1.5"
 ff = { version = "0.13.0", features = ["derive"] }
 serde = { version = "1.0", features = ["derive", "rc"] }
 bincode = "1.3"
-rand_core = "^0.6"
+rand_core = "0.6"
 
 [build-dependencies]
 cc = "^1.0.70"
@@ -75,3 +75,4 @@ opt-level = 3
 lto = "thin"
 incremental = false
 codegen-units = 16
+
